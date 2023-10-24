@@ -26,6 +26,7 @@ nav a {
     text-decoration: none;
     padding: 35px;
     font-size: 2em
+
 }
 
 /* Aplicar text-align: center; ao texto dentro dos elementos h1 e h4 em #hero-msg */
@@ -42,9 +43,22 @@ nav a {
     font-size: 2em
 }
 
-.rivers-card, .camping-card, .rapids-card {
-    margin-top: 200px;
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
 }
+
+.misty_mountains {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 
 .card-img {
     border: 10px solid #d9c2a3
@@ -159,7 +173,7 @@ footer a:hover {
 footer p {
     font-size: 1.2em; /* Tamanho da fonte de 1.2em (equivale a 120% do tamanho padrão) */
     padding: 35px;
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 /* Estilo para links dentro de <footer> quando passam o mouse sobre eles */
